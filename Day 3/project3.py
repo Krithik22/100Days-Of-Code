@@ -2,8 +2,8 @@ print("Welcome to the treasure Island")
 direction = input("You are at the junction, Where do you want to go left or right?\n")
 if(direction=='left'):
     print("you have choosen left walk straight and go to the bridge")
-    bridge = input("You wann cross the bridge? Y or N\n")
-    if(bridge=='y' or bridge=='Y'):
+    bridge = input("You wann cross the bridge? Y or N\n").lower()
+    if(bridge=='y'):
         print("You have walked to the bridge of fire\nBoom! Game Over")
     else:
         print("You did not cross the bridge\nGame Over.")
@@ -12,8 +12,8 @@ if(direction=='right'):
     if(river=='swim'):
         print("Oops! A shark ate you.\nGame Over.")
     elif(river=='wait'):
-        boat=input("You wanna take the boat? Y or N\n")
-        if(boat=='y' or boat=='Y'):
+        boat=input("You wanna take the boat? Y or N\n").lower()
+        if(boat=='y'):
             print("You have crossed the river")
             door = input("Which door you would like to choose? Blue, Red or Yellow\n")
             if(door=='blue'):
