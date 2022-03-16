@@ -1,0 +1,2 @@
+Reeborg's challenge hurdle 2 completed
+using while loop and functions
