@@ -1,2 +1,42 @@
 reeborg's world challenge hurdle 3 completed
 using while loop and an if statement
+
+my code 
+   
+while not at_goal():
+    while front_is_clear():
+        move()
+    if wall_in_front():
+        turn_left()
+    if wall_in_front() and wall_on_right():
+        turn_left()
+    while wall_on_right() and not at_goal():
+        move()
+        if not wall_on_right():
+            cross()
+        elif wall_in_front():
+            turn_left()
+
+shortened code
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+def cross():
+    turn_right()
+    move()
+    turn_right()
+def jump():
+    turn_left()
+    while wall_on_right():
+        move()
+    cross()
+    while front_is_clear():
+        move()
+    turn_left()
+    
+while not at_goal():
+    if wall_in_front():
+        jump()
+    else:
+        move()
