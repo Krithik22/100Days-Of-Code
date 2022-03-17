@@ -1,2 +1,2 @@
-reeborg's world chaleenge hurdle 3 incomplete 
-See You Tomorrow!
+reeborg's world challenge hurdle 3 completed
+using while loop and an if statement
