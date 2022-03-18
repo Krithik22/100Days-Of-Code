@@ -1,2 +1,13 @@
 maze project is Incomplete
 see you tomorrow!
+while not at_goal():
+    while front_is_clear():
+        move()
+        if wall_in_front() and not wall_on_right():
+            turn_right()
+        elif wall_in_front() and wall_on_right():
+            turn_left()
+        elif not wall_on_right() or front_is_clear():
+            turn_right()
+        else:
+            turn_left()
