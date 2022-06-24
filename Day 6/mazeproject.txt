@@ -12,4 +12,4 @@ while not at_goal():
         turn_left()
     else:
         move()
-As of now im considered as a beginner so i'll take up the debugging challenge later
+As of now im considered as a beginner so i'll take up the debugging challenge later  
