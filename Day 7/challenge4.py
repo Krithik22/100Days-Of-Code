@@ -89,7 +89,6 @@ while not end_of_game:
     print(f"{' '.join(display)}")
     if guess not in chosen_word:
         lives-=1
-        print(stages[lives])
         if lives==0:
             print("You Lose")
             end_of_game = True
@@ -99,3 +98,4 @@ while not end_of_game:
         print("You win.")
 
     #TODO-3: - print the ASCII art from 'stages' that corresponds to the current number of 'lives' the user has remaining.
+    print(stages[lives])
