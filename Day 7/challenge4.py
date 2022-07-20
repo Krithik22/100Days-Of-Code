@@ -89,7 +89,7 @@ while not end_of_game:
     print(f"{' '.join(display)}")
     if guess not in chosen_word:
         lives-=1
-        print(stages[lives-1])
+        print(stages[lives])
         if lives==0:
             print("You Lose")
             end_of_game = True
