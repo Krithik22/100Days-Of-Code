@@ -1,5 +1,5 @@
 def paint_calc(height, width, cover):
-  no_of_cans=(heighwidth)/cover
+  no_of_cans=(height*width)/cover
   cans=round(no_of_cans)
   print(f"You'll need {cans} cans of paint")
 
