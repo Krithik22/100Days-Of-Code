@@ -16,11 +16,11 @@ def encrypt(text, shift):
       diff=new_position - list_length
       diff=shift-diff
       if diff == 0:
-        x=shift-1
+        new_position = shift-1
       else:
-        x=diff
+        new_position = diff
     #The above section is used to overcome the bug of letters that come last like word 'zulu'
-    encrypted_message+=alphabet[x]
+    encrypted_message+=alphabet[new_position]
   print(encrypted_message)
     #TODO-2: Inside the 'encrypt' function, shift each letter of the 'text' forwards in the alphabet by the shift amount and print the encrypted text.  
     #e.g. 
