@@ -8,8 +8,6 @@ def caesar(start_text, shift_amount, cipher_direction):
   end_text = ""
   if cipher_direction == "decode":
     shift_amount *= -1
-  if shift_amount > 26:
-    shift_amount = shift_amount % 26
   for char in start_text:
     #TODO-3: What happens if the user enters a number/symbol/space?
     #Can you fix the code to keep the number/symbol/space when the text is encoded/decoded?
@@ -45,6 +43,7 @@ while ans:
   direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
   text = input("Type your message:\n").lower()
   shift = int(input("Type the shift number:\n"))
+  shift = shift % 26
   caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
   ans=input("Type 'yes if you want to go again. Otherwise type 'no.")
   if ans == 'no':
