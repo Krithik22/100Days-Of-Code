@@ -12,7 +12,7 @@ def encrypt(text, shift):
     position=alphabet.index(letter)
     new_position = position + shift
     #The below section is used to overcome the bug of letters that come last like word 'zulu'
-    if x>list_length:
+    if new_position > list_length:
       diff=new_position - list_length
       diff=shift-diff
       if diff == 0:
